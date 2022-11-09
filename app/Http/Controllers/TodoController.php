@@ -12,6 +12,10 @@ class TodoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function login(){
+        return view('dashboard.index');
+    }
     public function index()
     {
         //menampilkan halaman awal, semua data
