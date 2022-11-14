@@ -14,4 +14,10 @@ use App\http\Controllers\TodoController;
 |
 */
 
-Route::get('/', [TodoController::class, 'login']); 
+Route::get('/', [TodoController::class, 'login'])->name('login'); 
+Route::get('/register', [TodoController::class, 'register'])->name('register'); 
+
+Route::post('/register', [TodoController::class, 'inputRegister'])->name('register.post'); 
+    
+Route::post('/login', [TodoController::class, 'auth'])->name('login.auth');
+Route::get('/todo', [TodoController::class, 'index'])->name('todo.index');  

@@ -4,17 +4,15 @@
 <div class="wrapper bg-white">
     <div class="d-flex align-items-start justify-content-between">
         <div class="d-flex flex-column">
-            <div class="h5">My Todo's</div>
+            <div class="h5">My Complated Todo's</div>
             <p class="text-muted text-justify">
-                Here's a list of activities you have to do
+                Here's a list of activities you have done
+                <br>
+                <a href="/todo/">Back</a>
             </p>
-            <br>
-            <span>
-                <a href="{{route('todo.create')}}" class="text-success">Create</a> | <a href="{{route('todo.complated')}}">Complated</a>
-            </span>
         </div>
         <div class="info btn ml-md-4 ml-0">
-            <span class="fas fa-info" title="Info"></span>
+            <span class="fa-solid fa-check" title="complated"></span>
         </div>
     </div>
     <div class="work border-bottom pt-3">
@@ -22,7 +20,7 @@
             <div>
                 <span class="text-muted fas fa-comment btn"></span>
             </div>
-            <div class="text-muted">2 todos</div>
+            <div class="text-muted">2 complated todos</div>
             <button class="ml-auto btn bg-white text-muted fas fa-angle-down" type="button" data-toggle="collapse"
                 data-target="#comments" aria-expanded="false" aria-controls="comments"></button>
         </div>
@@ -31,7 +29,7 @@
         <div class="comment d-flex align-items-start justify-content-between">
             <div class="mr-2">
                 <label class="option">
-                    <input type="checkbox">
+                    <input type="checkbox" checked disabled>
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -42,13 +40,13 @@
                 <p class="text-muted">Completed <span class="date">Dec 16, 2019</span></p>
             </div>
             <div class="ml-md-4 ml-0">
-                <span class="fas fa-arrow-right btn"></span>
+                <span class="fas fa-undo btn"></span>
             </div>
         </div>
         <div class="comment d-flex align-items-start justify-content-between">
             <div class="mr-2">
                 <label class="option">
-                    <input type="checkbox">
+                    <input type="checkbox" checked disabled>
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -59,13 +57,13 @@
                 <p class="text-muted">Completed <span class="date">Dec 16, 2019</span></p>
             </div>
             <div class="ml-auto">
-                <span class="fas fa-arrow-right btn"></span>
+                <span class="fas fa-undo btn"></span>
             </div>
         </div>
         <div class="comment d-flex align-items-start justify-content-between">
             <div class="mr-2">
                 <label class="option">
-                    <input type="checkbox">
+                    <input type="checkbox" checked disabled>
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -76,7 +74,7 @@
                 <p class="text-muted">Completed <span class="date">Dec 16, 2019</span></p>
             </div>
             <div class="ml-auto">
-                <span class="fas fa-arrow-right btn"></span>
+                <span class="fas fa-undo btn"></span>
             </div>
         </div>
     </div>
